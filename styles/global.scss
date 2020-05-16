@@ -1,0 +1,24 @@
+@import './typography.scss';
+@import './variables.scss';
+
+.nav-link {
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+
+.carousel-item > img { 
+    max-height: 500px; 
+    width: 100%;
+}
+
+
+
+
+
+
+  

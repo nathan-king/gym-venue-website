@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import './variables.scss';
+
+html,
+body {
+    color: $lighter-gray;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+}
+
+@media screen and (max-width: $small-bp){
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.50rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (min-width: $large-bp){
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+}

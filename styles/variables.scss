@@ -1,0 +1,16 @@
+// MEDIA QUERIES - Same as Bootstrap
+
+$small-bp: 576px;
+$medium-bp: 768px;
+$large-bp: 992px;
+$extra-large-bp: 1200px;
+
+// COLORS
+
+$base-color: #6b0107; 
+$base-color-medium: darken($base-color, 5%);
+$base-color-dark: darken($base-color, 10%);
+$base-color-darker: darken($base-color, 20%);
+$base-color-light: lighten($base-color, 10%);
+
+$lighter-gray: lighten(lightgray, 10%);
