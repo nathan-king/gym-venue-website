@@ -13,11 +13,23 @@ h3 {
     text-align: center;
 }
 
+h1 {
+    font-size: 1.3rem;
+}
+
+h2 {
+    font-size: 1.15rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
 p {
     font-size: .7rem;
 }
 
-@media screen and (max-width: $small-bp){
+@media screen and (max-width: $medium-bp){
 
     h1 {
         font-size: 1.75rem;
@@ -29,6 +41,10 @@ p {
 
     h3 {
         font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 1rem;
     }
 
 }
