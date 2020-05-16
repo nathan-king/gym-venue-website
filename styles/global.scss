@@ -1,6 +1,10 @@
 @import './typography.scss';
 @import './variables.scss';
 
+html {
+  background: black;
+}
+
 .nav-link {
     cursor: pointer;
     text-align: center;
