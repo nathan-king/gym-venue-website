@@ -69,7 +69,7 @@ export default function NavComponent (props) {
             <UncontrolledDropdown nav inNavbar className={styles.dropdown}>
               <DropdownToggle nav className={styles.dropdownToggle}>
               <NavItem className={styles.navItem}>
-              <Link href="/amenities" activeClassName="active">
+              <Link activeClassName="active">
                 <a className={styles.dropdownLink}>Amenities</a>
                 </Link>
               </NavItem>
@@ -92,7 +92,7 @@ export default function NavComponent (props) {
             <UncontrolledDropdown nav inNavbar className={styles.dropdown}>
               <DropdownToggle nav>
               <NavItem className={styles.navItem}>
-              <Link href="/contact-us" activeClassName="active">
+              <Link activeClassName="active">
                 <a className={styles.dropdownLink}>Contact Us</a>
                 </Link>
               </NavItem>
