@@ -8,7 +8,6 @@ export default function WhatsOn() {
       <div className={styles.main}>
         <Head>
           <title>Create Next App</title>
-          <link rel="icon" href="/favicon.ico" />
         </Head>
   
         <Layout>

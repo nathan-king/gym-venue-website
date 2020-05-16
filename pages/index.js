@@ -9,7 +9,6 @@ export default function Home() {
     <div className={styles.main}>
       <Head>
         <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Popup />
       <Layout>
