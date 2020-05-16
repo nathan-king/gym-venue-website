@@ -69,7 +69,7 @@ export default function NavComponent (props) {
             <UncontrolledDropdown nav inNavbar className={styles.dropdown}>
               <DropdownToggle nav className={styles.dropdownToggle}>
               <NavItem className={styles.navItem}>
-              <Link href="/amenities" activeClassName="active">
+              <Link href="/" activeClassName="active">
                 <a className={styles.dropdownLink}>Amenities</a>
                 </Link>
               </NavItem>
@@ -77,12 +77,12 @@ export default function NavComponent (props) {
               <DropdownMenu dark className={styles.dropdownMenu}>
                 <DropdownItem divider  className={styles.dropdownDivider}/>
                 <DropdownItem className={styles.dropdownItem}>
-                  <Link href="/cafe" activeClassName="active">
+                  <Link href="/" activeClassName="active">
                       <a className={styles.dropdownLink}>Café</a>
                   </Link>
                 </DropdownItem>
                 <DropdownItem className={styles.dropdownItem}>
-                  <Link href="/private-rooms" activeClassName="active">
+                  <Link href="/" activeClassName="active">
                     <a className={styles.dropdownLink}>Private Rooms</a>
                   </Link>
                 </DropdownItem>
@@ -92,7 +92,7 @@ export default function NavComponent (props) {
             <UncontrolledDropdown nav inNavbar className={styles.dropdown}>
               <DropdownToggle nav>
               <NavItem className={styles.navItem}>
-              <Link href="/contact-us" activeClassName="active">
+              <Link href="/" activeClassName="active">
                 <a className={styles.dropdownLink}>Contact Us</a>
                 </Link>
               </NavItem>
@@ -100,17 +100,17 @@ export default function NavComponent (props) {
               <DropdownMenu dark className={styles.dropdownMenu}>
                 <DropdownItem divider  className={styles.dropdownDivider}/>
                 <DropdownItem className={styles.dropdownItem}>
-                  <Link href="/map" activeClassName="active">
+                  <Link href="/" activeClassName="active">
                     <a className={styles.dropdownLink}>Map</a>
                   </Link>
                 </DropdownItem>
                 <DropdownItem className={styles.dropdownItem}>
-                  <Link href="/lost-and-found" activeClassName="active">
+                  <Link href="/" activeClassName="active">
                     <a className={styles.dropdownLink}>Lost & Found</a>
                   </Link>
                 </DropdownItem>
                 <DropdownItem className={styles.dropdownItem}>
-                  <Link href="/careers" activeClassName="active">
+                  <Link href="/" activeClassName="active">
                     <a className={styles.dropdownLink}>Careers</a>
                   </Link>
                 </DropdownItem>
