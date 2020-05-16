@@ -1,6 +1,5 @@
 import { Jumbotron, Button } from 'reactstrap';
-import styles from './styles/popup.module.scss';
-// import React, { Component } from "react";
+import styles from './styles/Popup.module.scss';
   
 
 export default function Popup() {
