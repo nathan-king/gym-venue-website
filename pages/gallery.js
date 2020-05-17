@@ -48,6 +48,7 @@ export default function Gallery () {
         <div  className={styles.main}>
             <Head>
                 <title>Create Next App</title>
+                <link rel="icon" href="/favicon.ico" />
             </Head>
             <Layout>
                 <main>
