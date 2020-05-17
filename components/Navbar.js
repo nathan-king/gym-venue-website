@@ -77,7 +77,7 @@ export default function NavComponent (props) {
               <DropdownMenu dark className={styles.dropdownMenu}>
                 <DropdownItem divider  className={styles.dropdownDivider}/>
                 <DropdownItem className={styles.dropdownItem}>
-                  <Link href="/" activeClassName="active">
+                  <Link href="/cafe" activeClassName="active">
                       <a className={styles.dropdownLink}>Café</a>
                   </Link>
                 </DropdownItem>

@@ -51,7 +51,7 @@ export default function Gallery () {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Layout>
-                <main>
+                <main className={styles.carouselContainer}>
                     <UncontrolledCarousel items={items} className={styles.carousel} />
                 </main>
             </Layout>

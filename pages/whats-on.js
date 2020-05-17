@@ -1,14 +1,16 @@
 import Head from 'next/head'
 import Layout from '../components/Layout'
+import Favicon from '../components/Favicon'
 import styles from './styles/whats-on.module.scss'
 import { Jumbotron } from 'reactstrap'
+
 
 export default function WhatsOn() {
     return (
       <div className={styles.main}>
         <Head>
           <title>Create Next App</title>
-          <link rel="icon" type="image/x-icon" href="../public/favicon.ico" />
+          <Favicon />
         </Head>
   
         <Layout>
