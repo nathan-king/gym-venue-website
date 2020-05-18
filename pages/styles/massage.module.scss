@@ -1,14 +1,143 @@
+@import '../../styles/variables.scss';
+
 .main {
-    background-image: url('../../public/ss-lying-man.jpeg');
+    background-image: linear-gradient(black, $base-color-dark, $base-color-dark);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 
     position: relative;
-    padding-top: 2rem;
+    padding-top: 3.5rem;
+}
+
+.content {
+    margin-bottom: 4rem;
 }
 
 .heading {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+.jumbotron {
+    padding-top: 2rem;
+    color: $base-color;
+    background-color: $milk-white-trans;
+    // background-color: rgba(211, 211, 211, 0.8);
+    box-shadow: 1px 1px 1px rgba(0,0,0,.2), 
+              2px 2px 2px rgba(0,0,0,.2), 
+              4px 4px 4px rgba(0,0,0,.2), 
+              8px 8px 8px rgba(0,0,0,.2),
+              16px 16px 16px rgba(0,0,0,.2);
+    
+    padding: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+
+}
+
+.masseur {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+    justify-items: center;
+
+}
+
+.masseur2 {
+    flex-wrap: wrap-reverse;
+    background-color: $milk-white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.title {
+    width: 100%;
+    background-color: lightgray;
+    padding: 2rem;
+}
+
+.massageItem1 {
+    width: 200px;
+    max-width: 500px;
+    display: flex;
+    // margin-left: 2rem;
+    // margin-right: 2rem;
+    position: relative;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.name {
+    position: absolute;
+    left: 37%;
+    bottom: 1.5rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.massageItem2 {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+
+.photoContainer {
+    text-align: center;
+    padding-top: 3.5rem;
+}
+
+.massagePicture {
+    max-height: 250px;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1), 
+              2px 2px 2px rgba(0,0,0,.1), 
+              4px 4px 4px rgba(0,0,0,.1), 
+              8px 8px 8px rgba(0,0,0,.1),
+              16px 16px 16px rgba(0,0,0,.1);
+}
+
+.descriptionContainer {
+    padding: 0;
+    width: 100%;
+    max-width: 70vw;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.quotes {
+    font-size: 3rem;
+    line-height: 2rem;
+}
+
+
+.times {
+    text-align: center;
+    padding: 3rem;
+    // border-top: 1px solid $base-color;
+    background-color: lightgray;
+    width: 100%;
+}
+
+.prices {
+    background-color: $milk-white;
+    text-align: center;
+    width: 100%;
+    padding: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+.priceTitle {
+    margin-bottom: 2rem;;
+}
+
+.priceItemContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
 }

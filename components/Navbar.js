@@ -82,7 +82,7 @@ export default function NavComponent (props) {
                   </Link>
                 </DropdownItem>
                 <DropdownItem className={styles.dropdownItem}>
-                  <Link href="/" activeClassName="active">
+                  <Link href="/private-rooms" activeClassName="active">
                     <a className={styles.dropdownLink}>Private Rooms</a>
                   </Link>
                 </DropdownItem>
@@ -99,11 +99,6 @@ export default function NavComponent (props) {
               </DropdownToggle>
               <DropdownMenu dark className={styles.dropdownMenu}>
                 <DropdownItem divider  className={styles.dropdownDivider}/>
-                <DropdownItem className={styles.dropdownItem}>
-                  <Link href="/" activeClassName="active">
-                    <a className={styles.dropdownLink}>Map</a>
-                  </Link>
-                </DropdownItem>
                 <DropdownItem className={styles.dropdownItem}>
                   <Link href="/" activeClassName="active">
                     <a className={styles.dropdownLink}>Lost & Found</a>

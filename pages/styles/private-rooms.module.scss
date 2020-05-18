@@ -1,22 +1,25 @@
 @import '../../styles/variables.scss';
 
 .main {
-    background-image: url('../../public/ss-wet-man.webp');
+    background-image: linear-gradient(black, $base-color-dark, $base-color-darker);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 
     position: relative;
-    padding-top: 2rem;
-    color: $base-color;
+    padding-top: 1rem;
 }
 
 .heading {
     margin-bottom: 2rem;
 }
 
-.jumbotron  {
-    background-color: $milk-white-trans;
-    padding: 3rem 5%;
+.carousel {
+    margin: 5rem auto;
+    margin-bottom: 1rem;
+}
+
+.footnote {
+    text-align: center;
 }
