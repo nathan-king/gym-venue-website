@@ -5,9 +5,17 @@ import Popup from '../components/Popup'
 import Favicon from '../components/Favicon'
 import Map from '../components/Map'
 import AgeDisclaimer from '../components/AgeDisclaimer'
+import React, { Suspense } from 'react'
 
+const MyMap = React.lazy(
+  () =>
+  new Promise((resolve, reject) =>
+  setTimeout(() => resolve(import("../components/Map")), 1000)
+  )
+)
 
 export default function Home() {
+
   return (
     <div className={styles.main}>
       <Head>
@@ -24,7 +32,9 @@ export default function Home() {
 
           <p>For more detailed explanations and information Please wander through our site, if you have any other questions please don't hesitate to contact our friendly staff.</p>
           <div className={styles.mapContainer}>
-            <Map  className={styles.map}/>
+          <Suspense fallback={<div>Loading</div>}>
+            <MyMap label="my map" />
+          </Suspense>
           </div>
         </main>
       </Layout>
