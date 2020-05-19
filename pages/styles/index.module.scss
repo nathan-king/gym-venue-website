@@ -1,9 +1,10 @@
 .main {
     background-image: url('../../public/ss-men.webp');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -webkit-background-size: center top;
+    -moz-background-size: center top;
+    -o-background-size: center top;
+    background-size: center top;
+    background-repeat: no-repeat;
 
     position: relative;
     padding-top: 1rem;
@@ -11,4 +12,15 @@
 
 .content {
     padding-bottom: 2.7rem;
+}
+
+.mapContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+
+.map {
+    margin: 0 auto;
 }

@@ -1,0 +1,107 @@
+@import '../../styles/variables.scss';
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(0,0,0);
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+@keyframes delayShow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+  
+@-moz-keyframes delayShow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes delayShow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes delayShow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes delayShow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.popupInner {
+    margin: auto;
+    margin-top: auto;
+    width: 600px;
+    max-width: 90%;
+    border-radius: 1.2%;
+    background-color: $base-color;
+    color: $milk-white;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    padding-bottom: 1rem;
+}
+
+.buttonContainer {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button {
+    width: 7rem;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    color: lightgray;
+
+}
+
+.link {
+    color: lightgray;
+    text-decoration: none;
+
+    &:hover {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+
+@media screen and (min-width: $small-bp){
+    .popupInner {
+        padding: 2rem 3rem;
+        padding-bottom: 2rem;
+    }
+}
