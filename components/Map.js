@@ -6,6 +6,7 @@ class Map extends Component {
   containerStyle = {
     width: '800px',
     height: '400px',
+    maxWidth: '100%',
     borderRadius: '1%'
   };
 
@@ -16,18 +17,18 @@ class Map extends Component {
 
   render() {
     return (
-      <LoadScript
-        googleMapsApiKey="AIzaSyBpbaNt13bc6tVBdxLQwDxJ1zgft7OOpiM"
-      >
-        <GoogleMap
-          mapContainerStyle={this.containerStyle}
-          center={this.center}
-          zoom={17}
-          className={styles.map}
-        >
-        <Marker position={{ lat: -33.877713, lng: 151.213800 }} />
-        </GoogleMap>
-      </LoadScript>
+        <div className={styles.container}>
+            <LoadScript googleMapsApiKey="AIzaSyBpbaNt13bc6tVBdxLQwDxJ1zgft7OOpiM">
+                <GoogleMap
+                mapContainerStyle={this.containerStyle}
+                center={this.center}
+                zoom={17}
+                className={styles.map}
+                >
+                <Marker position={{ lat: -33.877713, lng: 151.213800 }} />
+                </GoogleMap>
+            </LoadScript>
+        </div>
     )
   }
 }
