@@ -3,16 +3,10 @@ import Layout from '../components/Layout'
 import styles from './styles/index.module.scss'
 import Popup from '../components/Popup'
 import Favicon from '../components/Favicon'
-import Map from '../components/Map'
 import AgeDisclaimer from '../components/AgeDisclaimer'
-import React, { Suspense } from 'react'
+import dynamic from 'next/dynamic'
 
-const MyMap = React.lazy(
-  () =>
-  new Promise((resolve, reject) =>
-  setTimeout(() => resolve(import("../components/Map")), 1000)
-  )
-)
+const Map = dynamic(() => import('../components/Map'))
 
 export default function Home() {
 
@@ -32,9 +26,7 @@ export default function Home() {
 
           <p>For more detailed explanations and information Please wander through our site, if you have any other questions please don't hesitate to contact our friendly staff.</p>
           <div className={styles.mapContainer}>
-          <Suspense fallback={<div>Loading</div>}>
-            <MyMap label="my map" />
-          </Suspense>
+          <Map  className={styles.map}/>
           </div>
         </main>
       </Layout>
