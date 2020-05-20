@@ -18,5 +18,11 @@
 
 .jumbotron  {
     background-color: $milk-white-trans;
-    padding: 3rem 5%;
+    padding: 3rem 7%;
+}
+
+@media screen and (min-width: $small-bp) {
+    .jumbotron {
+        padding: 10%;
+    }
 }
