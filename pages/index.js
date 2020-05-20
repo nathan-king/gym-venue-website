@@ -3,12 +3,23 @@ import Layout from '../components/Layout'
 import styles from './styles/index.module.scss'
 import Popup from '../components/Popup'
 import Favicon from '../components/Favicon'
+import Map from '../components/Map'
 import AgeDisclaimer from '../components/AgeDisclaimer'
-import dynamic from 'next/dynamic'
+import React, { Suspense } from 'react'
 
-const Map = dynamic(() => import('../components/Map'))
 
 export default function Home() {
+
+  const [showMap, setShowMap] = React.useState(false);
+
+  React.useEffect(() => {
+    // Set the map to load 2 seconds after first render
+    const timeOut = setTimeout(() => setShowMap(true), 2000);
+
+    return () => clearTimeout(timeOut);
+  }, []);
+
+  // <Map  className={styles.map}/>
 
   return (
     <div className={styles.main}>
@@ -25,9 +36,10 @@ export default function Home() {
           <p className="mt-4">Sydney Sauna is Sydney's premiere Gay men's sauna open 24 hours a day, 7 days a week, no matter what you're up to, or how your night is going, we are your destination. Sydney Sauna has many features available to it's customers. From 23 serviced rooms, 2 levels, plenty of cruise areas, large cinema room, fully serviced cafe and wet area including spa, sauna & steam room.</p>
 
           <p>For more detailed explanations and information Please wander through our site, if you have any other questions please don't hesitate to contact our friendly staff.</p>
-          <div className={styles.mapContainer}>
-          <Map  className={styles.map}/>
-          </div>
+          
+          {showMap && <div className={styles.mapContainer}>
+            <Map  className={styles.map}/>
+          </div>}
         </main>
       </Layout>
     </div>
