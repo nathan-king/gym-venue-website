@@ -40,18 +40,23 @@
         width: 0;
     }
     
-    &:hover span {
-        width: 3.5rem;
-        height: 3.5rem;
-        border-radius: 50%;
-        margin: -1.75rem;
+    &:hover {
+        color: white;
+
+        & span {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;
+            margin: -1.75rem;
+        }
+        
     }
 }
 
 /* Circle */
 
 .twitter {
-	background-color: #4099ff;
+    background-color: #4099ff;
 }
 .facebook {
 	background-color: #3B5998;
@@ -65,7 +70,7 @@
 	background: none;
 	color: white;
 	height: 2.5rem;
-	left: .5rem;
+	left: .8rem;
 	line-height: 3.6rem;
 	position: absolute;
 	top: .55rem;
@@ -87,6 +92,7 @@
 
 #facebookIcon {
     color: #3B5998;
+    left: 1.1rem;
     
     &:hover {
         color: white;
@@ -94,6 +100,7 @@
 }
 #instagramIcon {
     color: #bc2a8d;
+    left: .9rem;
     
     &:hover {
         color: white;
@@ -108,12 +115,18 @@
     
     & p {
         color: $lighter-gray;
-        font-size: .8rem;
+        font-size: .5rem;
     }
 }
 
 @media screen and (min-height: $medium-bp){
     .social {
         padding: 2rem;
+    }
+}
+
+@media screen and (min-width: $small-bp) {
+    .footer p {
+        font-size: .8rem;;
     }
 }

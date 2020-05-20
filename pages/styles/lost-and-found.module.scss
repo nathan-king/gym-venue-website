@@ -1,0 +1,90 @@
+@import '../../styles/variables.scss';
+
+.main {
+    background-image: url('../../public/ss-lying-man.jpeg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    position: relative;
+    padding-top: 1rem;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.89);
+    padding: 2rem 1rem;
+    width: 700px;
+    max-width: 80vw;
+    color: $base-color-dark;
+    border-radius: 2px;
+
+    animation: delayShow ease .5s .5s forwards;
+    -webkit-animation: delayShow ease .5s .5s forwards;
+    -moz-animation: delayShow ease .5s .5s forwards;
+    -o-animation: delayShow ease .5s .5s forwards;
+    -ms-animation: delayShow ease .5s .5s forwards;
+}
+
+.submitField {
+    text-align: center;
+}
+
+.input {
+    display: block;
+    width: 80%;
+    margin: 2rem auto;
+    border: none;
+    padding: .5rem;
+    border-radius: 2px;
+}
+
+.button {
+    padding: .5rem 1rem;
+    font-size: 1.2rem
+}
+
+@keyframes delayShow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+  
+@-moz-keyframes delayShow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes delayShow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes delayShow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes delayShow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

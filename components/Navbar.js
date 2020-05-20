@@ -92,7 +92,7 @@ export default function NavComponent (props) {
             <UncontrolledDropdown nav inNavbar className={styles.dropdown}>
               <DropdownToggle nav>
               <NavItem className={styles.navItem}>
-              <Link href="/" activeClassName="active">
+              <Link href="/contact-us" activeClassName="active">
                 <a className={styles.dropdownLink}>Contact Us</a>
                 </Link>
               </NavItem>
@@ -100,7 +100,7 @@ export default function NavComponent (props) {
               <DropdownMenu dark className={styles.dropdownMenu}>
                 <DropdownItem divider  className={styles.dropdownDivider}/>
                 <DropdownItem className={styles.dropdownItem}>
-                  <Link href="/" activeClassName="active">
+                  <Link href="/lost-and-found" activeClassName="active">
                     <a className={styles.dropdownLink}>Lost & Found</a>
                   </Link>
                 </DropdownItem>
