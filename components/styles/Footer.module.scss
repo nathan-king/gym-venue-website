@@ -13,7 +13,7 @@
 	border-radius: 50%;
 	cursor: pointer;
 	display: inline-block;
-	font-size: 2.0rem;
+	font-size: 2rem;
 	height: 3.5rem;
 	line-height: 3.6rem;
 	margin: 0 5px;
@@ -80,6 +80,7 @@
 	        transition: all 0.3s;
     width: 2.5rem;
     z-index: 10;
+    margin: 0 auto;
 }
 
 #twitterIcon {
@@ -92,7 +93,7 @@
 
 #facebookIcon {
     color: #3B5998;
-    left: 1.1rem;
+    left: 1rem;
     
     &:hover {
         color: white;
@@ -127,6 +128,6 @@
 
 @media screen and (min-width: $small-bp) {
     .footer p {
-        font-size: .8rem;;
+        font-size: .8rem;
     }
 }
