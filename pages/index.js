@@ -13,7 +13,7 @@ export default function Home() {
   const [showMap, setShowMap] = React.useState(false);
 
   React.useEffect(() => {
-    const timeOut = setTimeout(() => setShowMap(true), 0);
+    const timeOut = setTimeout(() => setShowMap(true), 2000);
 
     return () => clearTimeout(timeOut);
   }, []);
