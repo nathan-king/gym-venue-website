@@ -3,21 +3,25 @@ import Layout from '../components/Layout'
 import styles from './styles/index.module.scss'
 import Popup from '../components/Popup'
 import Favicon from '../components/Favicon'
-import Map from '../components/Map'
+// import Map from '../components/Map'
 import AgeDisclaimer from '../components/AgeDisclaimer'
 import React, { Suspense } from 'react'
+import dynamic from 'next/dynamic'
+
+
+const Map = dynamic(() => import('../components/Map'))
 
 
 export default function Home() {
 
-  const [showMap, setShowMap] = React.useState(false);
+  // const [showMap, setShowMap] = React.useState(false);
 
-  React.useEffect(() => {
-    // Set the map to load 2 seconds after first render
-    const timeOut = setTimeout(() => setShowMap(true), 2000);
+  // React.useEffect(() => {
+  //   // Set the map to load 2 seconds after first render
+  //   const timeOut = setTimeout(() => setShowMap(true), 2000);
 
-    return () => clearTimeout(timeOut);
-  }, []);
+  //   return () => clearTimeout(timeOut);
+  // }, []);
 
   // <Map  className={styles.map}/>
 
@@ -37,9 +41,9 @@ export default function Home() {
 
           <p>For more detailed explanations and information Please wander through our site, if you have any other questions please don't hesitate to contact our friendly staff.</p>
           
-          {showMap && <div className={styles.mapContainer}>
+          <div className={styles.mapContainer}>
             <Map  className={styles.map}/>
-          </div>}
+          </div>
         </main>
       </Layout>
     </div>
