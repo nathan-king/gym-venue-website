@@ -9,7 +9,10 @@ import React, { Suspense } from 'react'
 import dynamic from 'next/dynamic'
 
 
-const Map = dynamic(() => import('../components/Map'))
+const Map = dynamic(() => import('../components/Map'), {
+  ssr: false,
+  loading: () => <div>Loading Map...</div>
+});
 
 
 export default function Home() {
