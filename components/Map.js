@@ -5,7 +5,7 @@ import styles from './styles/Map.module.scss'
 class Map extends Component {
   containerStyle = {
     width: '100%',
-    height: `${window.innerHeight - 200}px`,
+    height: '100%',
     borderRadius: '1%'
   };
 
