@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Layout from '../components/Layout'
 import Favicon from '../components/Favicon'
 import styles from './styles/contact-us.module.scss'
