@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Layout from '../components/Layout'
+import Favicon from '../components/Favicon'
 import styles from './styles/gallery.module.scss'
 import { Carousel } from 'reactstrap'
 import React from 'react';
@@ -47,8 +48,8 @@ export default function Gallery () {
     return (
         <div  className={styles.main}>
             <Head>
-                <title>Create Next App</title>
-                <link rel="icon" href="/favicon.ico" />
+                <title>Sydney Sauna | Gallery</title>
+                <Favicon />
             </Head>
             <Layout>
                 <main className={styles.carouselContainer}>

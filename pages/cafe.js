@@ -1,13 +1,14 @@
 import Head from 'next/head'
 import Layout from '../components/Layout'
+import Favicon from '../components/Favicon'
 import styles from './styles/cafe.module.scss'
 
 export default function Cafe() {
     return (
       <div className={styles.main}>
         <Head>
-          <title>Create Next App</title>
-          <link rel="icon" type="image/x-icon" href="../public/favicon.ico" />
+          <title>Sydney Sauna | Café</title>
+          <Favicon />
         </Head>
   
         <Layout>

@@ -21,6 +21,7 @@ export default function Home() {
   return (
     <div className={styles.main}>
       <Head>
+        <title>Sydney Sauna | About Us</title>
         <Favicon />
       </Head>
       <AgeDisclaimer />

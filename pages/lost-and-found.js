@@ -1,4 +1,5 @@
 import Layout from '../components/Layout'
+import Favicon from '../components/Favicon'
 import styles from './styles/lost-and-found.module.scss'
 import { Button, Jumbotron } from 'reactstrap';
 
@@ -7,6 +8,10 @@ export default function Contact() {
 
     return (
         <div className={styles.main}>
+            <Head>
+                <title>Sydney Sauna | Lost and Found</title>
+                <Favicon />
+            </Head>
             <Layout>
                 <Jumbotron className={styles.content}>
                     <submit>

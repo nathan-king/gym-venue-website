@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Layout from '../components/Layout'
+import Favicon from '../components/Favicon'
 import styles from './styles/private-rooms.module.scss'
 
 import React from 'react';
@@ -27,8 +28,8 @@ export default function PrivateRooms() {
     return (
       <div className={styles.main}>
         <Head>
-          <title>Create Next App</title>
-          <link rel="icon" type="image/x-icon" href="../public/favicon.ico" />
+          <title>Sydney Sauna | Private Rooms</title>
+          <Favicon />
         </Head>
   
         <Layout>

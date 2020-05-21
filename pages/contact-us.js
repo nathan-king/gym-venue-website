@@ -1,4 +1,5 @@
 import Layout from '../components/Layout'
+import Favicon from '../components/Favicon'
 import styles from './styles/contact-us.module.scss'
 import { Button, Jumbotron } from 'reactstrap';
 
@@ -7,6 +8,10 @@ export default function Contact() {
 
     return (
         <div className={styles.main}>
+            <Head>
+                <title>Sydney Sauna | Contact Us</title>
+                <Favicon />
+            </Head>
             <Layout>
                 <Jumbotron className={styles.content}>
                     <submit>
