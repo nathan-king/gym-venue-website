@@ -11,7 +11,6 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavbarText
 } from 'reactstrap';
 import { Button } from 'reactstrap'; 
 import styles from './styles/Navbar.module.scss'
@@ -39,7 +38,16 @@ export default function NavComponent (props) {
 
             {/* NAV ITEMS */}
 
-          <Nav className="mr-auto" navbar>
+
+          <NavItem className={styles.navItemButton}>
+            <Button size="sm" className={styles.button}>
+              <Link href="#" activeClassName="active">
+                <NavLink>Melbourne</NavLink>
+              </Link>
+            </Button>
+          </NavItem>  
+
+          <Nav className="ml-auto" navbar>
             <NavItem className={styles.navItem}>
               <Link href="/" activeClassName="active">
                 <NavLink className={styles.navLink}>About Us</NavLink>
@@ -57,6 +65,7 @@ export default function NavComponent (props) {
                 <NavLink className={styles.navLink}>Gallery</NavLink>
               </Link>
             </NavItem>
+            
 
             <NavItem className={styles.navItem}>
               <Link href="/massage" activeClassName="active">
@@ -64,7 +73,11 @@ export default function NavComponent (props) {
               </Link>
             </NavItem>
 
-            {/* DROPDOWNS */}
+            <NavItem className={`${styles.navItem} ${styles.dropdown}`}>
+              <Link href="/contact-us" activeClassName="active">
+                <NavLink className={styles.navLink}>Contact Us</NavLink>
+              </Link>
+            </NavItem>
 
             <UncontrolledDropdown nav inNavbar className={styles.dropdown}>
               <DropdownToggle nav className={styles.dropdownToggle}>
@@ -88,29 +101,11 @@ export default function NavComponent (props) {
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
+
+
+            {/* DROPDOWNS */}
+
             
-            <UncontrolledDropdown nav inNavbar className={styles.dropdown}>
-              <DropdownToggle nav>
-              <NavItem className={styles.navItem}>
-              <Link href="/contact-us" activeClassName="active">
-                <a className={styles.dropdownLink}>Contact Us</a>
-                </Link>
-              </NavItem>
-              </DropdownToggle>
-              <DropdownMenu dark className={styles.dropdownMenu}>
-                <DropdownItem divider  className={styles.dropdownDivider}/>
-                <DropdownItem className={styles.dropdownItem}>
-                  <Link href="/lost-and-found" activeClassName="active">
-                    <a className={styles.dropdownLink}>Lost & Found</a>
-                  </Link>
-                </DropdownItem>
-                <DropdownItem className={styles.dropdownItem}>
-                  <Link href="/" activeClassName="active">
-                    <a className={styles.dropdownLink}>Careers</a>
-                  </Link>
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
             
 
 
@@ -136,13 +131,6 @@ export default function NavComponent (props) {
 
           {/* NAV RIGHT */}
           </Nav>
-          <NavItem className={styles.navItemButton}>
-            <Button size="sm" className={styles.button}>
-              <Link href="#" activeClassName="active">
-                <NavLink>Melbourne</NavLink>
-              </Link>
-            </Button>
-          </NavItem>
         </Collapse>
       </Navbar>
     </div>

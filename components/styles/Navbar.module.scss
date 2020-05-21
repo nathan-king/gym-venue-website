@@ -2,27 +2,31 @@
 
 .companyLogo {
     max-height: 2.5rem;
+    margin: 1rem;
 }
 
 .nav {
     background-color: rgba(0, 0, 0, 0.9);
     z-index: 50;
     font-variant: small-caps;
-    padding-bottom: 1rem;
+    padding: .5rem 2rem !important;
+    display: flex;
+    align-items: center;
 }
 
-.collapseMenu {
-    width: 50%;
-}
+// .collapseMenu {
+//     width: 50%;
+// }
 
 .navItem {
     text-align: center;
     font-size: 1.2rem;
+    min-height: 2rem;
+    margin-bottom: 1rem;
 }
 
 .navLink {
     border-radius: 2%;
-    padding-bottom: .8rem;
 
     &:hover {
         background-color: rgb(31, 31, 31);
@@ -32,11 +36,15 @@
 .navItemButton {
     list-style-type: none;
     text-align: center;
+    margin: 0 1rem;
 
 }
 .dropdown {
-    margin-bottom: 1rem;
-    text-align: center;
+    margin: 0 auto;
+}
+
+.dropdownToggle {
+    margin: 0;
 }
 
 .dropdownLink {
@@ -56,11 +64,13 @@
 .dropdownMenu {
     background-color: rgba(0, 0, 0, 0.9);
     text-align: center;
+    width: 0;
 }
 
 .dropdownItem {
     color: gray;
     font-variant: small-caps;
+    margin: 0 auto;
 
     &:hover {
         background-color: rgba(0, 0, 0, 0.9);
@@ -85,6 +95,9 @@
     padding: 0 !important;
     font-variant: normal;
     margin: 0 auto;
+
+    animation: blinker 1s linear infinite;
+    
 }
 
 .button:hover {
@@ -129,6 +142,14 @@
     }
 
 }
+
+// Animation
+
+@keyframes blinker {
+    50% {
+      opacity: .5;
+    }
+  }
 
 
 

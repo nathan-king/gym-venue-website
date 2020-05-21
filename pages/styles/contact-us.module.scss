@@ -33,6 +33,16 @@
     text-align: center;
 }
 
+.form {
+    width: 600px;
+    max-width: 90%;
+    margin: 2rem auto;
+}
+
+.formGroup {
+    margin: 2rem 0;
+}
+
 .input {
     display: block;
     width: 80%;
@@ -40,6 +50,11 @@
     border: none;
     padding: .5rem;
     border-radius: 2px;
+}
+
+.buttonContainer {
+    width: 100%;
+    text-align: center;
 }
 
 .button {

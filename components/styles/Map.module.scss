@@ -4,7 +4,7 @@
     display: flex; 
     flex-flow: row nowrap; 
     justify-content: center; 
-    padding: 0;
+    padding-bottom: 2.5%; //Stops overflow of iframe/map
 }
 
 .map {
