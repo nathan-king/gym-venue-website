@@ -1,109 +1,108 @@
-@import '../../styles/variables.scss';
+@import "../../styles/variables.scss";
 
 .popup {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    background-color: rgba(0,0,0, 0.7);
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    color: black;
-    opacity: 0;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  color: black;
+  opacity: 0;
 
-    animation: delayShow ease .5s 1s forwards;
-    -webkit-animation: delayShow ease .5s 1s forwards;
-    -moz-animation: delayShow ease .5s 1s forwards;
-    -o-animation: delayShow ease .5s 1s forwards;
-    -ms-animation: delayShow ease .5s 1s forwards;
+  animation: delayShow ease 0.5s 1s forwards;
+  -webkit-animation: delayShow ease 0.5s 1s forwards;
+  -moz-animation: delayShow ease 0.5s 1s forwards;
+  -o-animation: delayShow ease 0.5s 1s forwards;
+  -ms-animation: delayShow ease 0.5s 1s forwards;
 }
 
 .p {
-    text-align: justify;
+  text-align: justify;
+  font-size: 0.8rem;
 }
 
 @keyframes delayShow {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-  
+
 @-moz-keyframes delayShow {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes delayShow {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-o-keyframes delayShow {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-ms-keyframes delayShow {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .popupInner {
-    margin: auto;
-    margin-top: auto;
-    width: 600px;
-    max-width: 90%;
-    border-radius: 1.2%;
-    background-color: $milk-white;
-    color: $base-color;
-    text-align: center;
-    padding: 1.5rem 2rem;
-    padding-bottom: 1rem;
-    font-size: .8rem;
+  margin: auto;
+  margin-top: auto;
+  width: 600px;
+  max-width: 90%;
+  border-radius: 1.2%;
+  background-color: $milk-white;
+  color: $base-color;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  padding-bottom: 1rem;
+  font-size: 0.8rem;
 }
 
 .buttonContainer {
-    text-align: center;
+  text-align: center;
 }
 
 .button {
-    width: 7rem;
-    font-size: 1rem;
-    margin-top: 1.5rem;
-    font-size: 1.25rem;
-    color: lightgray;
-
+  width: 7rem;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  color: lightgray;
 }
 
-
-@media screen and (min-width: $small-bp){
-    .popupInner {
-        padding: 2rem 3rem;
-        padding-bottom: 2rem;
-        font-size: 1rem;
-    }
+@media screen and (min-width: $small-bp) {
+  .popupInner {
+    padding: 2rem 3rem;
+    padding-bottom: 2rem;
+    font-size: 1rem;
+  }
 }

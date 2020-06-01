@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   Collapse,
   Navbar,
@@ -11,12 +11,12 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-} from 'reactstrap';
-import { Button } from 'reactstrap'; 
-import styles from './styles/Navbar.module.scss'
-import Link from './Link'
+} from "reactstrap";
+import { Button } from "reactstrap";
+import styles from "./styles/Navbar.module.scss";
+import Link from "./Link";
 
-export default function NavComponent (props) {
+export default function NavComponent(props) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -24,9 +24,12 @@ export default function NavComponent (props) {
   return (
     <div>
       <Navbar dark expand="xl" fixed="top" className={styles.nav}>
-
         <NavbarBrand href="/">
-          <img src="../ss-logo.png" alt="Sydney Sauna Logo" className={styles.companyLogo}/>
+          <img
+            src="../ss-logo.png"
+            alt="Sydney Sauna Logo"
+            className={styles.companyLogo}
+          />
         </NavbarBrand>
 
         {/* NAV TOGGLER */}
@@ -35,9 +38,7 @@ export default function NavComponent (props) {
 
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar className={styles.collapseMenu}>
-
-            {/* NAV ITEMS */}
-
+          {/* NAV ITEMS */}
 
           <NavItem className={styles.navItemButton}>
             <Button size="sm" className={styles.button}>
@@ -45,7 +46,7 @@ export default function NavComponent (props) {
                 <NavLink>Melbourne</NavLink>
               </Link>
             </Button>
-          </NavItem>  
+          </NavItem>
 
           <Nav className="ml-auto" navbar>
             <NavItem className={styles.navItem}>
@@ -65,7 +66,6 @@ export default function NavComponent (props) {
                 <NavLink className={styles.navLink}>Gallery</NavLink>
               </Link>
             </NavItem>
-            
 
             <NavItem className={styles.navItem}>
               <Link href="/massage" activeClassName="active">
@@ -81,17 +81,17 @@ export default function NavComponent (props) {
 
             <UncontrolledDropdown nav inNavbar className={styles.dropdown}>
               <DropdownToggle nav className={styles.dropdownToggle}>
-              <NavItem className={styles.navItem}>
-              <Link href="/" activeClassName="active">
-                <a className={styles.dropdownLink}>Amenities</a>
-                </Link>
-              </NavItem>
+                <NavItem className={styles.navItem}>
+                  <Link href="/amenities" activeClassName="active">
+                    <a className={styles.dropdownLink}>Amenities</a>
+                  </Link>
+                </NavItem>
               </DropdownToggle>
-              <DropdownMenu dark className={styles.dropdownMenu}>
-                <DropdownItem divider  className={styles.dropdownDivider}/>
+              <DropdownMenu dark right className={styles.dropdownMenu}>
+                <DropdownItem divider className={styles.dropdownDivider} />
                 <DropdownItem className={styles.dropdownItem}>
                   <Link href="/cafe" activeClassName="active">
-                      <a className={styles.dropdownLink}>Café</a>
+                    <a className={styles.dropdownLink}>Café</a>
                   </Link>
                 </DropdownItem>
                 <DropdownItem className={styles.dropdownItem}>
@@ -102,12 +102,7 @@ export default function NavComponent (props) {
               </DropdownMenu>
             </UncontrolledDropdown>
 
-
             {/* DROPDOWNS */}
-
-            
-            
-
 
             {/* DROPDOWN */}
 
@@ -129,7 +124,7 @@ export default function NavComponent (props) {
               </DropdownMenu>
             </UncontrolledDropdown> */}
 
-          {/* NAV RIGHT */}
+            {/* NAV RIGHT */}
           </Nav>
         </Collapse>
       </Navbar>

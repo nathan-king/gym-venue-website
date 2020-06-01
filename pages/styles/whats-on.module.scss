@@ -1,29 +1,29 @@
-@import '../../styles/variables.scss';
+@import "../../styles/variables.scss";
 
 .main {
-    background-image: url('../../public/ss-wet-man.webp');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  background-image: url("../../public/ss-wet-man.webp");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
-    position: relative;
-    padding-top: 2rem;
-    color: $base-color;
+  position: relative;
+  padding-top: 2rem;
+  color: $base-color;
 }
 
 .heading {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
-.jumbotron  {
-    background-color: $milk-white-trans;
-    padding: 3rem 7%;
-    border-radius: 4px;
+.jumbotron {
+  background-color: $milk-white-trans;
+  padding: 3rem 7%;
+  border-radius: 4px;
 }
 
 @media screen and (min-width: $small-bp) {
-    .jumbotron {
-        padding: 10%;
-    }
+  .jumbotron {
+    padding: 10%;
+  }
 }

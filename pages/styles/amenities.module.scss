@@ -1,0 +1,53 @@
+@import "../../styles/variables.scss";
+
+.main {
+  background-image: url("../../public/ss-wet-man.webp");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-top: 2rem;
+
+  position: relative;
+}
+
+.jumbotron {
+  display: flex;
+  margin: 2rem 0;
+  flex-direction: column;
+}
+
+.box {
+  max-width: 800px;
+  min-width: 50%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.listHeading {
+  margin: 3rem auto;
+  width: 100%;
+  display: block;
+}
+
+.lists {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  font-size: 0.7rem;
+}
+
+.footnotes {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: $small-bp) {
+  .lists {
+    font-size: 1rem;
+  }
+}
