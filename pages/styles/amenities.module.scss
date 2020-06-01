@@ -21,7 +21,6 @@
   max-width: 800px;
   min-width: 50%;
   margin: 0 auto;
-  padding: 0 1rem;
 }
 
 .listHeading {
@@ -46,8 +45,16 @@
   align-items: center;
 }
 
+.ul {
+  padding: 0;
+}
+
 @media screen and (min-width: $small-bp) {
   .lists {
     font-size: 1rem;
+  }
+
+  .footnote {
+    font-size: 0.7rem;
   }
 }

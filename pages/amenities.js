@@ -43,10 +43,10 @@ export default function Massage() {
           </div>
           <div className={styles.box}>
             <div>
-              <ul>
-                <h2 class="h5" className={styles.listHeading}>
-                  Our facilities are the best in Sydney and include:
-                </h2>
+              <h2 class="h5" className={styles.listHeading}>
+                Our facilities are the best in Sydney and include:
+              </h2>
+              <ul className={styles.ul}>
                 <div className={styles.lists}>
                   <div>
                     <li>Steam Room</li>
@@ -74,7 +74,7 @@ export default function Massage() {
               </ul>
             </div>
             <div className={styles.footnotes}>
-              <p>
+              <p className={styles.footnote}>
                 <sup>1 </sup>including Sony TV, Chromecast & Sling
                 <br />
                 <sup>2 </sup>showing current and classic movies
