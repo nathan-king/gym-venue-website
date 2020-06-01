@@ -55,11 +55,11 @@ export default function NavComponent(props) {
               </Link>
             </NavItem>
 
-            <NavItem className={styles.navItem}>
+            {/* <NavItem className={styles.navItem}>
               <Link href="/whats-on" activeClassName="active">
                 <NavLink className={styles.navLink}>What's On</NavLink>
               </Link>
-            </NavItem>
+            </NavItem> */}
 
             <NavItem className={styles.navItem}>
               <Link href="/gallery" activeClassName="active">
@@ -67,11 +67,11 @@ export default function NavComponent(props) {
               </Link>
             </NavItem>
 
-            <NavItem className={styles.navItem}>
+            {/* <NavItem className={styles.navItem}>
               <Link href="/massage" activeClassName="active">
                 <NavLink className={styles.navLink}>Massage</NavLink>
               </Link>
-            </NavItem>
+            </NavItem> */}
 
             <NavItem className={`${styles.navItem} ${styles.dropdown}`}>
               <Link href="/contact-us" activeClassName="active">

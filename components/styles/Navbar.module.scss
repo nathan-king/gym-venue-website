@@ -1,17 +1,17 @@
-@import '../../styles/variables';
+@import "../../styles/variables";
 
 .companyLogo {
-    max-height: 2.5rem;
-    margin: 1rem;
+  max-height: 2.5rem;
+  margin: 1rem;
 }
 
 .nav {
-    background-color: rgba(0, 0, 0, 0.9);
-    z-index: 50;
-    font-variant: small-caps;
-    padding: .5rem 2rem !important;
-    display: flex;
-    align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 50;
+  font-variant: small-caps;
+  padding: 0.5rem 2rem !important;
+  display: flex;
+  align-items: center;
 }
 
 // .collapseMenu {
@@ -19,137 +19,130 @@
 // }
 
 .navItem {
-    text-align: center;
-    font-size: 1.2rem;
-    min-height: 2rem;
-    margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  min-height: 2rem;
+  margin-bottom: 1rem;
 }
 
 .navLink {
-    border-radius: 2%;
+  border-radius: 2%;
 
-    &:hover {
-        background-color: rgb(31, 31, 31);
-    }
+  &:hover {
+    background-color: rgb(31, 31, 31);
+  }
 }
 
 .navItemButton {
-    list-style-type: none;
-    text-align: center;
-    margin: 0 1rem;
-
+  list-style-type: none;
+  text-align: center;
+  margin: 0 1rem;
 }
 .dropdown {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .dropdownToggle {
-    margin: 0;
+  margin: 0;
 }
 
 .dropdownLink {
-    color: gray;
-    border-radius: 2%;
-    padding-bottom: .8rem;
-    padding-top: .5rem;
-    // padding-left: .5rem;
-    // padding-right: .5rem;
+  color: gray;
+  border-radius: 2%;
+  padding-bottom: 0.8rem;
+  padding-top: 0.5rem;
+  // padding-left: .5rem;
+  // padding-right: .5rem;
 }
 
 .dropdownLink:hover {
-    color: lightgray;
-    text-decoration: none;
+  color: lightgray;
+  text-decoration: none;
 }
 
 .dropdownMenu {
-    background-color: rgba(0, 0, 0, 0.9);
-    text-align: center;
-    width: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  width: 0;
 }
 
 .dropdownItem {
-    color: gray;
-    font-variant: small-caps;
-    margin: 0 auto;
+  color: gray;
+  font-variant: small-caps;
+  margin: 0 auto;
 
-    &:hover {
-        background-color: rgba(0, 0, 0, 0.9);
-        color: lightgray;
-    }
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: lightgray;
+  }
 }
 
 .dropdownToggle {
-    padding-right: 0;
+  padding-right: 0;
 }
 
 .dropdownDivider {
-    border-top: 1px solid gray;
-    max-width: 130px;
-    margin: 0 auto;
+  border-top: 1px solid gray;
+  max-width: 130px;
+  margin: 0 auto;
 }
 
 .button {
-    font-size: 1rem;
-    font-weight: bold;
-    background-color: black;
-    padding: 0 !important;
-    font-variant: normal;
-    margin: 0 auto;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: black;
+  padding: 0 !important;
+  font-variant: normal;
+  margin: 0 auto;
 
-    animation: blinker 1s linear infinite;
-    
+  animation: blinker 1s linear infinite;
 }
 
 .button:hover {
-    color: black;
-    background-color: $lighter-gray;
+  color: black;
+  background-color: $lighter-gray;
 }
 
 @media screen and (min-width: $small-bp) {
-    .companyLogo {
-        max-height: 3rem;
-    }
+  .companyLogo {
+    max-height: 3rem;
+  }
 
-    .nav {
-        text-align: center;
-        font-size: 1.5rem;
-        padding-bottom: 2rem;
-    }
+  .nav {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+  }
 
-    .dropdownMenu {
-        font-size: 1.25rem;
-    }
+  .dropdownMenu {
+    font-size: 1.25rem;
+  }
 
-
-    .navItem {
-        margin-left: 1rem;
-        margin-right: 1rem;
-        font-size: 1.5rem;
-    }
+  .navItem {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+  }
 }
 
-@media screen and (min-width: $extra-large-bp){
-    .nav {
-        padding-bottom: .5rem;
-    }
-    .navItem {
-        padding-top: .6rem;
-        font-size: 1.2rem;
-    }
+@media screen and (min-width: $extra-large-bp) {
+  .nav {
+    padding-bottom: 0.5rem;
+  }
+  .navItem {
+    padding-top: 0.6rem;
+    font-size: 1.2rem;
+  }
 
-    .dropdownMenu {
-        font-size: 1.25rem;
-    }
-
+  .dropdownMenu {
+    font-size: 1.25rem;
+  }
 }
 
 // Animation
 
 @keyframes blinker {
-    50% {
-      opacity: .5;
-    }
+  50% {
+    opacity: 0.5;
   }
-
-
-
+}
