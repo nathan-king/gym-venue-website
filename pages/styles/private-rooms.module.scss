@@ -1,25 +1,39 @@
-@import '../../styles/variables.scss';
+@import "../../styles/variables.scss";
 
 .main {
-    background-image: linear-gradient(black, $base-color-dark, $base-color-darker);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  background-image: linear-gradient(
+    black,
+    $base-color-dark,
+    $base-color-darker
+  );
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
-    position: relative;
-    padding-top: 1rem;
+  position: relative;
+  padding-top: 1rem;
 }
 
 .heading {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .carousel {
-    margin: 5rem auto;
-    margin-bottom: 1rem;
+  margin: 5rem auto;
+  margin-bottom: 1rem;
 }
 
 .footnote {
-    text-align: center;
+  text-align: center;
+}
+
+.smallCaption {
+  text-align: center;
+}
+
+@media screen and (min-width: $medium-bp) {
+  .smallCaption {
+    display: none;
+  }
 }
