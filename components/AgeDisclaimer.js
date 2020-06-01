@@ -5,10 +5,10 @@ import styles from "./styles/AgeDisclaimer.module.scss";
 export default function AgeDisclaimer() {
   const [visible, setVisible] = React.useState(false);
   useEffect(() => {
-    let pop_status = localStorage.getItem("pop_status");
-    if (!pop_status) {
+    let pop_status2 = localStorage.getItem("pop_status2");
+    if (!pop_status2) {
       setVisible(true);
-      localStorage.setItem("pop_status", 1);
+      localStorage.setItem("pop_status2", 1);
     }
   }, []);
   if (!visible) return null;
