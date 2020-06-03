@@ -1,110 +1,123 @@
-@import '../../styles/variables.scss';
+@import "../../styles/variables.scss";
 
 .main {
-    background-image: url('../../public/ss-lying-man.jpeg');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  background-image: url("../../public/ss-lying-man.jpeg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
-    position: relative;
-    padding-top: 1rem;
+  position: relative;
+  padding-top: 1rem;
 }
 
 .content {
-    background-color: rgba(255, 255, 255, 0.89);
-    padding: 2rem 1rem;
-    width: 700px;
-    max-width: 80vw;
-    color: $base-color-dark;
-    border-radius: 2px;
-    margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.89);
+  padding: 2rem 1rem;
+  width: 700px;
+  max-width: 80vw;
+  color: $base-color-dark;
+  border-radius: 2px;
+  margin: 0 auto;
 
-    opacity: 0;
+  opacity: 0;
 
-    animation: delayShow ease .5s 1s forwards;
-    -webkit-animation: delayShow ease .5s 1s forwards;
-    -moz-animation: delayShow ease .5s 1s forwards;
-    -o-animation: delayShow ease .5s 1s forwards;
-    -ms-animation: delayShow ease .5s 1s forwards;
+  animation: delayShow ease 0.5s 1s forwards;
+  -webkit-animation: delayShow ease 0.5s 1s forwards;
+  -moz-animation: delayShow ease 0.5s 1s forwards;
+  -o-animation: delayShow ease 0.5s 1s forwards;
+  -ms-animation: delayShow ease 0.5s 1s forwards;
 }
 
 .submitField {
-    text-align: center;
+  text-align: center;
 }
 
 .form {
-    width: 600px;
-    max-width: 90%;
-    margin: 2rem auto;
+  width: 600px;
+  max-width: 90%;
+  margin: 2rem auto;
 }
 
 .formGroup {
-    margin: 2rem 0;
+  margin: 2rem 0;
 }
 
 .input {
-    display: block;
-    width: 80%;
-    margin: 2rem auto;
-    border: none;
-    padding: .5rem;
-    border-radius: 2px;
+  display: block;
+  width: 80%;
+  margin: 2rem auto;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 2px;
+}
+
+.formInput {
+  background-color: rgba(255, 255, 255, 0.7);
+
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid purple;
+  }
+}
+
+.formOption {
+  background-color: rgb(216, 216, 216);
 }
 
 .buttonContainer {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .button {
-    padding: .5rem 1rem;
-    font-size: 1.2rem
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
 }
 
 // ANIMATION
 
 @keyframes delayShow {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-  
+
 @-moz-keyframes delayShow {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes delayShow {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-o-keyframes delayShow {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-ms-keyframes delayShow {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

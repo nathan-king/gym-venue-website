@@ -53,6 +53,7 @@ export default function Contact() {
               placeholder="Enter name"
               value={name}
               onChange={(e) => setName(e.target.value)}
+              className={styles.formInput}
             />
           </FormGroup>
 
@@ -65,6 +66,7 @@ export default function Contact() {
               placeholder="Enter email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              className={styles.formInput}
             />
           </FormGroup>
 
@@ -76,9 +78,14 @@ export default function Contact() {
               id="enquiryType"
               value={enquiryType}
               onChange={(e) => setEnquiryType(e.target.value)}
+              className={styles.formInput}
             >
-              <option value="General Enquiry">General Enquiry</option>
-              <option value="Lost Item">Lost Item</option>
+              <option value="General Enquiry" className={styles.formOption}>
+                General Enquiry
+              </option>
+              <option value="Lost Item" className={styles.formOption}>
+                Lost Item
+              </option>
             </Input>
           </FormGroup>
 
@@ -91,6 +98,7 @@ export default function Contact() {
               rows="5"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
+              className={styles.formInput}
             />
           </FormGroup>
 
