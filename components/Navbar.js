@@ -50,7 +50,7 @@ export default function NavComponent(props) {
             navBackground
               ? "black"
               : window.innerWidth < 1200
-              ? black
+              ? "black"
               : "transparent"
           }`,
           transition: ".2s ease",
