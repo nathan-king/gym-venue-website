@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import window from "global";
 import {
   Collapse,
   Navbar,
@@ -21,9 +22,36 @@ export default function NavComponent(props) {
 
   const toggle = () => setIsOpen(!isOpen);
 
+  const [navBackground, setNavBackground] = useState(false);
+  const navRef = useRef();
+  navRef.current = navBackground;
+  useEffect(() => {
+    const handleScroll = () => {
+      const show = window.scrollY > 100;
+      if (navRef.current !== show) {
+        setNavBackground(show);
+      }
+    };
+    document.addEventListener("scroll", handleScroll);
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div>
-      <Navbar dark expand="xl" fixed="top" className={styles.nav}>
+      <Navbar
+        dark
+        expand="xl"
+        fixed="top"
+        className={styles.nav}
+        style={{
+          backgroundColor: `${
+            navBackground || window.innerWidth < 1200 ? "black" : "transparent"
+          }`,
+          transition: ".2s ease",
+        }}
+      >
         <NavbarBrand href="/">
           <img
             src="../ss-logo.png"
@@ -87,8 +115,19 @@ export default function NavComponent(props) {
                   </Link>
                 </NavItem>
               </DropdownToggle>
-              <DropdownMenu dark right className={styles.dropdownMenu}>
-                <DropdownItem divider className={styles.dropdownDivider} />
+              <DropdownMenu
+                dark
+                right
+                className={styles.dropdownMenu}
+                style={{
+                  backgroundColor: `${
+                    navBackground || window.innerWidth < 1200
+                      ? "black"
+                      : "transparent"
+                  }`,
+                  transition: ".2s ease",
+                }}
+              >
                 <DropdownItem className={styles.dropdownItem}>
                   <Link href="/cafe" activeClassName="active">
                     <a className={styles.dropdownLink}>Café</a>

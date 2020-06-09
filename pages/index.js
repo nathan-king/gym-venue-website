@@ -51,7 +51,9 @@ export default function Home() {
             contact our friendly staff.
           </p>
 
-          {showMap && (
+          {!showMap ? (
+            <h2>...loading</h2>
+          ) : (
             <div className={styles.mapContainer}>
               <Map className={styles.map} />
             </div>

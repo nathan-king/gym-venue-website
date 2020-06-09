@@ -25,6 +25,9 @@
 
 .navLink {
   border-radius: 2%;
+  &:hover {
+    color: white !important;
+  }
 }
 
 .navItemButton {
@@ -50,7 +53,7 @@
 }
 
 .dropdownLink:hover {
-  color: lightgray;
+  color: white;
   text-decoration: none;
 }
 
@@ -65,8 +68,8 @@
   font-variant: small-caps;
 
   &:hover {
-    background-color: rgba(0, 0, 0, 0.9);
-    color: lightgray;
+    background-color: inherit;
+    color: white;
   }
 }
 
@@ -146,6 +149,7 @@
   }
 
   .dropdownLink {
+    margin: 0 auto;
     &:hover {
       border-bottom: 1px solid $base-color-light;
     }
