@@ -121,6 +121,12 @@
   }
 }
 
+@media screen and (max-width: $medium-bp) {
+  .nav {
+    background-color: black !important;
+  }
+}
+
 @media screen and (min-width: $large-bp) {
   .dropdownLink {
     padding-top: 0.5rem;
