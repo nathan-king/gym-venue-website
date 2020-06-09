@@ -47,7 +47,7 @@ export default function NavComponent(props) {
         className={styles.nav}
         style={{
           backgroundColor: `${
-            navBackground || window.innerWidth < 1200 ? "transparent" : "black"
+            navBackground || window.innerWidth > 1200 ? "transparent" : "black";
           }`,
           transition: ".2s ease",
         }}
