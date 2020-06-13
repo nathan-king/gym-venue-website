@@ -11,8 +11,8 @@ export default function Layout({ children }) {
         <Header />
         <div className={styles.content}>{children}</div>
         <Footer />
+        <Social />
       </div>
-      <Social />
     </>
   );
 }
