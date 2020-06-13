@@ -1,84 +1,85 @@
-@import '../../styles/variables';
+@import "../../styles/variables";
 
-.container {                    //Entire layout
-    margin: 0 auto;
+.container {
+  //Entire layout
+  margin: 0 auto;
 
-    //STICKY FOOTER
-    display: flex;              //Sets page container to flex-box
-    flex-direction: column;     //Aligns content vertically
-
+  //STICKY FOOTER
+  display: flex; //Sets page container to flex-box
+  flex-direction: column; //Aligns content vertically
 }
 
-.content {                      //Header and Content excl. Footer
-                    
-    //STICKY FOOTER             
-    flex-grow: 1;               //Makes .content fill rest of space excl. space for Footer
-    padding-bottom: 3rem;
-    padding-top: 6rem;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    width: 900px;
-    max-width: 90%;
-    margin: 0 auto;
-    text-align: justify;
+.content {
+  //Header and Content excl. Footer
 
-    animation: fadeIn ease .5s;
-    -webkit-animation: fadeIn ease .5s;
-    -moz-animation: fadeIn ease .5s;
-    -o-animation: fadeIn ease .5s;
-    -ms-animation: fadeIn ease .5s;
+  //STICKY FOOTER
+  flex-grow: 1; //Makes .content fill rest of space excl. space for Footer
+  padding-bottom: 3rem;
+  padding-top: 6rem;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  width: 900px;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: justify;
+
+  animation: fadeIn ease 0.5s;
+  -webkit-animation: fadeIn ease 0.5s;
+  -moz-animation: fadeIn ease 0.5s;
+  -o-animation: fadeIn ease 0.5s;
+  -ms-animation: fadeIn ease 0.5s;
 }
 
 @keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
+  0% {
+    opacity: 0;
   }
-  
-  @-moz-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-o-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-ms-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
+  100% {
+    opacity: 1;
   }
 }
 
-@media screen and (min-height: $medium-bp){
-  .container {
-    min-height: 100vh;          //Gives content height of 100% of the viewport
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-height: $medium-bp) {
+  .container {
+    min-height: 100vh; //Gives content height of 100% of the viewport
+  }
+
   .content {
     height: 100%;
   }

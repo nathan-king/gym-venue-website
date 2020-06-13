@@ -1,16 +1,18 @@
-import Header from './Header'
-import Footer from './Footer'
+import Header from "./Header";
+import Footer from "./Footer";
+import Social from "./SocialMedia";
 
-import styles from './styles/Layout.module.scss';
+import styles from "./styles/Layout.module.scss";
 
 export default function Layout({ children }) {
-    return (
-        <div className={styles.container}>
-            <Header />
-                <div className={styles.content}>
-                    {children}
-                </div>
-            <Footer />
-        </div>
-    )
+  return (
+    <>
+      <div className={styles.container}>
+        <Header />
+        <div className={styles.content}>{children}</div>
+        <Footer />
+      </div>
+      <Social />
+    </>
+  );
 }

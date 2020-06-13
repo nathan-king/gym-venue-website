@@ -1,0 +1,123 @@
+@import "../../styles/variables.scss";
+
+.social {
+  background-color: $lighter-gray;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 4px 0 0;
+  display: flex;
+  flex-direction: column;
+  transform: scale(0.8);
+  transform-origin: bottom left;
+}
+
+//SOCIAL BUTTONS
+
+.iconButton {
+  background-color: $lighter-gray;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2rem;
+  height: 3.5rem;
+  line-height: 3.6rem;
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 3.5rem;
+
+  & span {
+    border-radius: 0;
+    display: block;
+    height: 0;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 0;
+  }
+
+  &:hover {
+    color: white;
+
+    & span {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 50%;
+      margin: -1.75rem;
+    }
+  }
+}
+
+/* Circle */
+
+.twitter {
+  background-color: #4099ff;
+}
+.facebook {
+  background-color: #3b5998;
+}
+.instagram {
+  background-color: #bc2a8d;
+}
+
+/* Icons */
+.icon {
+  background: none;
+  color: white;
+  height: 2.5rem;
+  left: 0.8rem;
+  line-height: 3.6rem;
+  position: absolute;
+  top: 0.55rem;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 2.5rem;
+  z-index: 10;
+  margin: 0 auto;
+}
+
+#twitterIcon {
+  color: #4099ff;
+
+  &:hover {
+    color: white;
+  }
+}
+
+#facebookIcon {
+  color: #3b5998;
+  left: 1.08rem;
+
+  &:hover {
+    color: white;
+  }
+}
+#instagramIcon {
+  color: #bc2a8d;
+  left: 0.9rem;
+
+  &:hover {
+    color: white;
+  }
+}
+
+@media screen and (max-width: $small-bp) {
+  .social {
+    transform: scale(0.5);
+    border-radius: 5px;
+  }
+}

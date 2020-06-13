@@ -3,18 +3,27 @@ import Layout from "../components/Layout";
 import styles from "./styles/index.module.scss";
 import Popup from "../components/Popup";
 import Favicon from "../components/Favicon";
-import Map from "../components/Map";
 import AgeDisclaimer from "../components/AgeDisclaimer";
 import React, { Suspense } from "react";
+import { Spinner } from "reactstrap";
+import dynamic from "next/dynamic";
 
 export default function Home() {
   const [showMap, setShowMap] = React.useState(false);
 
-  React.useEffect(() => {
-    const timeOut = setTimeout(() => setShowMap(true), 2000);
+  // React.useEffect(() => {
+  //   const timeOut = setTimeout(() => setShowMap(true), 2000);
 
-    return () => clearTimeout(timeOut);
-  }, []);
+  //   return () => clearTimeout(timeOut);
+  // }, []);
+
+  const Map = dynamic(() => import("../components/Map"), {
+    loading: () => (
+      <div className={styles.spinner}>
+        <Spinner color="info" />
+      </div>
+    ),
+  });
 
   return (
     <div className={styles.main}>
@@ -32,7 +41,6 @@ export default function Home() {
             comprehensive refit
           </h1>
           <h2 className="mb-6">
-            {" "}
             We aim to raise the bar for saunas in Australia
           </h2>
 
@@ -51,13 +59,19 @@ export default function Home() {
             contact our friendly staff.
           </p>
 
-          {!showMap ? (
-            <h2>...loading</h2>
+          <div className={styles.mapContainer}>
+            <Map className={styles.map} />
+          </div>
+
+          {/* {!showMap ? (
+            <div className={styles.spinner}>
+              <Spinner color="info" />
+            </div>
           ) : (
             <div className={styles.mapContainer}>
               <Map className={styles.map} />
             </div>
-          )}
+          )} */}
         </main>
       </Layout>
     </div>

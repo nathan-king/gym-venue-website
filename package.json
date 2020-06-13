@@ -21,6 +21,7 @@
     "next": "9.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-reveal": "^1.2.2",
     "reactstrap": "^8.4.1",
     "sass": "^1.26.5"
   }
