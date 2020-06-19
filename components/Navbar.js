@@ -68,12 +68,12 @@ export default function NavComponent(props) {
 
           <NavItem className={styles.navItemButton}>
             <Button size="sm" className={styles.button}>
-              <Link
+              <a
                 href="https://www.subwaysauna.com.au/"
-                activeClassName="active"
+                style={{ color: "inherit" }}
               >
                 <NavLink>Melbourne</NavLink>
-              </Link>
+              </a>
             </Button>
           </NavItem>
 
