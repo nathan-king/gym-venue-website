@@ -62,7 +62,14 @@ export default function NavComponent(props) {
 
         {/* See if there's a way to animate toggle icon */}
 
-        <NavbarToggler onClick={toggle} />
+        <NavbarToggler onClick={toggle}>
+          <div id="close-icon" className={isOpen ? "open" : ""}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </NavbarToggler>
+
         <Collapse isOpen={isOpen} navbar className={styles.collapseMenu}>
           {/* NAV ITEMS */}
 
