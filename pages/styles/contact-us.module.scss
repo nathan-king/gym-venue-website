@@ -1,14 +1,14 @@
 @import "../../styles/variables.scss";
 
 .main {
-  background-image: url("../../public/ss-lying-man.jpeg");
+  background-color: #16161d;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 
   position: relative;
-  padding-top: 1rem;
+  padding-top: 10vh;
 }
 
 .content {
@@ -36,7 +36,7 @@
 .form {
   width: 600px;
   max-width: 90%;
-  margin: 2rem auto;
+  margin: 0 auto 2rem auto;
 }
 
 .formGroup {

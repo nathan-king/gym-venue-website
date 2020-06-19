@@ -33,7 +33,7 @@ export default function Home() {
         <script src="/static/chrome-fix.js" />
       </Head>
       <AgeDisclaimer />
-      <Popup />
+      {/* <Popup /> */}
       <Layout>
         <main className={styles.content}>
           <h1 className="mt-4 mb-4">

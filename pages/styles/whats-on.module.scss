@@ -1,14 +1,14 @@
 @import "../../styles/variables.scss";
 
 .main {
-  background-image: url("../../public/ss-wet-man.webp");
+  background-color: #16161d;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 
   position: relative;
-  padding-top: 2rem;
+  padding-top: 10vh;
   color: $base-color;
 }
 

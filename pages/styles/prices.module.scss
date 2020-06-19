@@ -1,0 +1,23 @@
+@import "../../styles/variables.scss";
+
+.main {
+  background-image: url("../../public/ss-wrestle.jpg");
+  padding-top: 5rem;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  // display: flex;
+  // justify-content: center;
+}
+
+.heading {
+  display: block;
+}
+.col {
+  margin: 2rem 0;
+  text-align: center;
+}

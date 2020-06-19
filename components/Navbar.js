@@ -81,15 +81,21 @@ export default function NavComponent(props) {
               </Link>
             </NavItem>
 
-            <NavItem className={styles.navItem}>
+            {/* <NavItem className={styles.navItem}>
               <Link href="/whats-on" activeClassName="active">
                 <NavLink className={styles.navLink}>What's On</NavLink>
               </Link>
-            </NavItem>
+            </NavItem> */}
 
             <NavItem className={styles.navItem}>
               <Link href="/gallery" activeClassName="active">
                 <NavLink className={styles.navLink}>Gallery</NavLink>
+              </Link>
+            </NavItem>
+
+            <NavItem className={`${styles.navItem} `}>
+              <Link href="/prices" activeClassName="active">
+                <NavLink className={styles.navLink}>Prices</NavLink>
               </Link>
             </NavItem>
 
@@ -99,13 +105,30 @@ export default function NavComponent(props) {
               </Link>
             </NavItem> */}
 
-            <NavItem className={`${styles.navItem} ${styles.dropdown}`}>
+            <NavItem className={`${styles.navItem} `}>
+              <Link href="/amenities" activeClassName="active">
+                <NavLink className={styles.navLink}>Amenities</NavLink>
+              </Link>
+            </NavItem>
+
+            <NavItem className={`${styles.navItem} `}>
+              <Link href="/cafe" activeClassName="active">
+                <NavLink className={styles.navLink}>Café</NavLink>
+              </Link>
+            </NavItem>
+
+            <NavItem className={`${styles.navItem} `}>
+              <Link href="/private-rooms" activeClassName="active">
+                <NavLink className={styles.navLink}>Private Rooms</NavLink>
+              </Link>
+            </NavItem>
+
+            <NavItem className={`${styles.navItem} `}>
               <Link href="/contact-us" activeClassName="active">
                 <NavLink className={styles.navLink}>Contact Us</NavLink>
               </Link>
             </NavItem>
-
-            <UncontrolledDropdown nav inNavbar className={styles.dropdown}>
+            {/* <UncontrolledDropdown nav inNavbar className={styles.dropdown}>
               <DropdownToggle nav className={styles.dropdownToggle}>
                 <NavItem className={styles.navItem}>
                   <Link href="/amenities" activeClassName="active">
@@ -137,7 +160,7 @@ export default function NavComponent(props) {
                   </Link>
                 </DropdownItem>
               </DropdownMenu>
-            </UncontrolledDropdown>
+            </UncontrolledDropdown> */}
 
             {/* DROPDOWNS */}
 
