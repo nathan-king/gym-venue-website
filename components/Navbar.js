@@ -68,7 +68,10 @@ export default function NavComponent(props) {
 
           <NavItem className={styles.navItemButton}>
             <Button size="sm" className={styles.button}>
-              <Link href="#" activeClassName="active">
+              <Link
+                href="https://www.subwaysauna.com.au/"
+                activeClassName="active"
+              >
                 <NavLink>Melbourne</NavLink>
               </Link>
             </Button>
