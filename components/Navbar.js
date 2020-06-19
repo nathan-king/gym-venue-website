@@ -62,7 +62,7 @@ export default function NavComponent(props) {
 
         {/* See if there's a way to animate toggle icon */}
 
-        <NavbarToggler onClick={toggle}>
+        <NavbarToggler onClick={toggle} style={{ border: "none" }}>
           <div id="close-icon" className={isOpen ? "open" : ""}>
             <span></span>
             <span></span>

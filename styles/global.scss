@@ -44,10 +44,10 @@ blockquote {
   display: block;
   height: 2px;
   width: 100%;
-  background: #d3531a;
+  background: $base-color-lighter;
   border-radius: 2px;
   opacity: 1;
-  left: 0;
+  left: 2%;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -56,7 +56,7 @@ blockquote {
   -moz-transition: 0.25s ease-in-out;
   -o-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
-  margin-top: 5px;
+  margin-top: 6px;
 }
 
 /* Close Icon */
