@@ -13,7 +13,7 @@ export default function Massage() {
       </Head>
 
       <Layout>
-        <h1>Amenities</h1>
+        <h1 className={styles.heading}>Amenities</h1>
         <div className={styles.jumbotron}>
           <div className={styles.box}>
             <p>

@@ -9,11 +9,16 @@
   background-repeat: no-repeat;
 
   position: relative;
-  padding-top: 1rem;
+  padding-top: 10vh;
 }
 
 .content {
   padding-bottom: 2.7rem;
+}
+
+.heading {
+  color: $base-color-lighter;
+  margin-bottom: 2rem;
 }
 
 .spinner {

@@ -36,7 +36,7 @@ export default function Home() {
       {/* <Popup /> */}
       <Layout>
         <main className={styles.content}>
-          <h1 className="mt-4 mb-4">
+          <h1 className="mt-4 mb-4" className={styles.heading}>
             Operating in the heart of Oxford Street and fresh from a
             comprehensive refit
           </h1>

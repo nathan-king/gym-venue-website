@@ -7,13 +7,14 @@ $extra-large-bp: 1200px;
 
 // COLORS
 
-$base-color: #6b0107; 
+$base-color: #6b0107;
 $base-color-medium: darken($base-color, 5%);
 $base-color-dark: darken($base-color, 10%);
 $base-color-darker: darken($base-color, 20%);
 $base-color-light: lighten($base-color, 10%);
+$base-color-lighter: lighten($base-color, 40%);
 
 $lighter-gray: lighten(lightgray, 10%);
 
-$milk-white: #E9E7DF;
+$milk-white: #e9e7df;
 $milk-white-trans: rgba(233, 231, 223, 0.8);

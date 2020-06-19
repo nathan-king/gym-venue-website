@@ -43,6 +43,7 @@ export default function Contact() {
         <Favicon />
       </Head>
       <Layout>
+        <h1 className={styles.heading}>Drop us a message!</h1>
         <Form className={styles.form} onSubmit={handleSubmit}>
           <FormGroup className={styles.formGroup}>
             <Label for="name">Name</Label>
