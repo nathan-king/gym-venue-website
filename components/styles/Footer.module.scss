@@ -26,17 +26,23 @@
 
 .link {
   text-decoration: none;
-  color: white;
-
+  color: #da9bf0;
+  animation: blinker 1.5s linear infinite;
   &:hover {
     text-decoration: none;
-    color: white;
-    font-weight: bold;
+    color: blueviolet;
+    // font-weight: bold;
   }
 }
 
 @media screen and (min-width: $extra-large-bp) {
   .social {
     display: block;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0.5;
   }
 }
