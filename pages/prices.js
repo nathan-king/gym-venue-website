@@ -17,9 +17,9 @@ export default function Prices() {
         <Container className={styles.container}>
           <Row>
             <Col xs="12" className={styles.col}>
-              <p>
+              <h3>
                 A $2 COVID-19 surcharge will apply on all entry prices holidays
-              </p>
+              </h3>
             </Col>
           </Row>
           <Row>
