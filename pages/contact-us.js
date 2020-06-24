@@ -3,6 +3,7 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 import Favicon from "../components/Favicon";
 import styles from "./styles/contact-us.module.scss";
+import { Alert } from "reactstrap";
 import {
   Button,
   Form,
@@ -19,6 +20,7 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [enquiryType, setEnquiryType] = useState("General Enquiry");
   const [message, setMessage] = useState("");
+  const [alert, setAlert] = useState(false);
 
   const state = {
     name,
@@ -34,6 +36,8 @@ export default function Contact() {
     var template_id = "message_template";
     var user_id = "user_GoXzo0iR6wJ3KqB1148aq";
     emailjs.send(service_id, template_id, state, user_id);
+    setAlert(true);
+    setTimeout(() => setAlert(false), 2000);
   };
 
   return (
@@ -55,6 +59,7 @@ export default function Contact() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               className={styles.formInput}
+              required
             />
           </FormGroup>
 
@@ -68,6 +73,7 @@ export default function Contact() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className={styles.formInput}
+              required
             />
           </FormGroup>
 
@@ -80,6 +86,7 @@ export default function Contact() {
               value={enquiryType}
               onChange={(e) => setEnquiryType(e.target.value)}
               className={styles.formInput}
+              required
             >
               <option value="General Enquiry" className={styles.formOption}>
                 General Enquiry
@@ -100,6 +107,7 @@ export default function Contact() {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               className={styles.formInput}
+              required
             />
           </FormGroup>
 
@@ -109,6 +117,11 @@ export default function Contact() {
             </Button>
           </div>
         </Form>
+        {alert && (
+          <Alert color="success" style={{ textAlign: "center" }}>
+            Sent!
+          </Alert>
+        )}
       </Layout>
     </div>
   );
