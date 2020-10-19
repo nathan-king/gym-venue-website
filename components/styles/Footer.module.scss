@@ -12,6 +12,11 @@
   }
 }
 
+.icon {
+  height: 3rem;
+  filter: invert(50%) sepia(100%) hue-rotate(-110deg) saturate(200%);
+}
+
 @media screen and (min-height: $medium-bp) {
   .social {
     padding: 2rem;

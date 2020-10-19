@@ -37,20 +37,18 @@ export default function Home() {
       <Layout>
         <main className={styles.content}>
           <h1 className="mt-4 mb-4" className={styles.heading}>
-            Operating in the heart of Oxford Street and fresh from a
-            comprehensive refit
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
           </h1>
-          <h2 className="mb-6">
-            We aim to raise the bar for saunas in Australia
-          </h2>
+          <h2 className="mb-6">Donec interdum et sem sed scelerisque.</h2>
 
           <p className="mt-4">
-            Sydney Sauna is Sydney's premiere Gay men's sauna open 24 hours a
-            day, 7 days a week, no matter what you're up to, or how your night
-            is going, we are your destination. Sydney Sauna has many features
-            available to it's customers. From 23 serviced rooms, 2 levels,
-            plenty of cruise areas, large cinema room, fully serviced cafe and
-            wet area including spa, sauna & steam room.
+            Nam fermentum nec tellus in imperdiet. Vestibulum ante ipsum primis
+            in faucibus orci luctus et ultrices posuere cubilia curae; Nulla
+            ante dui, egestas ac purus ac, sagittis iaculis metus. Maecenas
+            convallis ligula massa, sed blandit odio mollis vel. Vivamus
+            interdum magna in diam facilisis, non scelerisque sem auctor. Aenean
+            placerat efficitur leo in mollis. Nunc ac magna non tellus blandit
+            tincidunt.
           </p>
 
           <p>

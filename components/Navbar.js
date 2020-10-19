@@ -52,8 +52,8 @@ export default function NavComponent(props) {
       >
         <NavbarBrand href="/">
           <img
-            src="../ss-logo.png"
-            alt="Sydney Sauna Logo"
+            src="../gym-venue.svg"
+            alt="Gym Venue Logo"
             className={styles.companyLogo}
           />
         </NavbarBrand>
@@ -72,17 +72,6 @@ export default function NavComponent(props) {
 
         <Collapse isOpen={isOpen} navbar className={styles.collapseMenu}>
           {/* NAV ITEMS */}
-
-          <NavItem className={styles.navItemButton}>
-            <Button size="sm" className={styles.button}>
-              <a
-                href="https://www.subwaysauna.com.au/"
-                style={{ color: "inherit" }}
-              >
-                <NavLink>Melbourne</NavLink>
-              </a>
-            </Button>
-          </NavItem>
 
           <Nav className="ml-auto" navbar>
             <NavItem className={styles.navItem}>
@@ -122,79 +111,10 @@ export default function NavComponent(props) {
             </NavItem>
 
             <NavItem className={`${styles.navItem} `}>
-              <Link href="/cafe" activeClassName="active">
-                <NavLink className={styles.navLink}>Café</NavLink>
-              </Link>
-            </NavItem>
-
-            <NavItem className={`${styles.navItem} `}>
-              <Link href="/private-rooms" activeClassName="active">
-                <NavLink className={styles.navLink}>Private Rooms</NavLink>
-              </Link>
-            </NavItem>
-
-            <NavItem className={`${styles.navItem} `}>
               <Link href="/contact-us" activeClassName="active">
                 <NavLink className={styles.navLink}>Contact Us</NavLink>
               </Link>
             </NavItem>
-            {/* <UncontrolledDropdown nav inNavbar className={styles.dropdown}>
-              <DropdownToggle nav className={styles.dropdownToggle}>
-                <NavItem className={styles.navItem}>
-                  <Link href="/amenities" activeClassName="active">
-                    <a className={styles.dropdownLink}>Amenities</a>
-                  </Link>
-                </NavItem>
-              </DropdownToggle>
-              <DropdownMenu
-                dark
-                right
-                className={styles.dropdownMenu}
-                style={{
-                  backgroundColor: `${
-                    navBackground || window.innerWidth < 1200
-                      ? "black"
-                      : "transparent"
-                  }`,
-                  transition: ".2s ease",
-                }}
-              >
-                <DropdownItem className={styles.dropdownItem}>
-                  <Link href="/cafe" activeClassName="active">
-                    <a className={styles.dropdownLink}>Café</a>
-                  </Link>
-                </DropdownItem>
-                <DropdownItem className={styles.dropdownItem}>
-                  <Link href="/private-rooms" activeClassName="active">
-                    <a className={styles.dropdownLink}>Private Rooms</a>
-                  </Link>
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown> */}
-
-            {/* DROPDOWNS */}
-
-            {/* DROPDOWN */}
-
-            {/* <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                  Option 1
-                </DropdownItem>
-                <DropdownItem>
-                  Option 2
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  Reset
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown> */}
-
-            {/* NAV RIGHT */}
           </Nav>
         </Collapse>
       </Navbar>

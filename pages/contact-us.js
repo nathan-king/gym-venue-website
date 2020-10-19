@@ -32,8 +32,8 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(state);
-    var service_id = "default_service";
-    var template_id = "message_template";
+    var service_id = "smtp_server";
+    var template_id = "sydney_sauna";
     var user_id = "user_GoXzo0iR6wJ3KqB1148aq";
     emailjs.send(service_id, template_id, state, user_id);
     setAlert(true);

@@ -3,6 +3,7 @@
 .companyLogo {
   max-height: 2.5rem;
   margin: 1rem;
+  filter: invert(40%) sepia(100%) hue-rotate(-50deg) saturate(300%);
 }
 
 .nav {
