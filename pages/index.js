@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <div className={styles.main}>
       <Head>
-        <title>Sydney Sauna | About Us</title>
+        <title>Gym Venue | About Us</title>
         <Favicon />
         <script src="/static/chrome-fix.js" />
       </Head>
