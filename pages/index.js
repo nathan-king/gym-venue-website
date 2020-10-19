@@ -32,7 +32,7 @@ export default function Home() {
         <Favicon />
         <script src="/static/chrome-fix.js" />
       </Head>
-      <AgeDisclaimer />
+      {/* <AgeDisclaimer /> */}
       {/* <Popup /> */}
       <Layout>
         <main className={styles.content}>
